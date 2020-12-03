@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Display</title>
+    <style>
+      body * {
+        font-family: sans-serif;
+      }
+      h1,
+      h2,
+      p {
+        text-align: center;
+      }
+      .box {
+        border: 2px solid black;
+        width: 300px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Time Display</h1>
+    <hr />
+    <p>The current time and date</p>
+    <div class="box">
+      <!-- <h2>Oct. 26, 2020</h2>
+      <h2>11:26 AM</h2> -->
+      <h2>{{ date }}</h2>
+      <h2>{{time}}</h2>
+
+      <!-- -->
+      <!-- {{ time1 }}
+      <br />
+      time2 -> {{ date }}<br />
+      {{time}} -->
+    </div>
+    <div
+      class="box"
+      style="text-align: center; margin-top: 10px; width: 400px; padding: 10px"
+    >
+      datetimeNow -> {{ datetimeNow}}<br />
+      timezoneNow -> {{ timezoneNow }}
+    </div>
+  </body>
+</html>
