@@ -8,6 +8,7 @@ def index(request):
   nowDatetime = datetime.datetime.now()
   nowTimezone = timezone.now()
   
+  # !!!! remove gmtime() for local time@@
   context = {
     "time1" : strftime("%Y-%b.-%d %H:%M %p", gmtime()),
     "date" : strftime("%b. %d, %Y", gmtime()),
